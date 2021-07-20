@@ -1,13 +1,15 @@
+// save button to save input items locally
 $('.saveBtn').click(function(){
     event.preventDefault();
     var formValue = $(this).siblings('.form-control').val();
-    console.log('is this working');
+    console.log('It Works.');
     var listItem = $(this).parent().data('hour');
     localStorage.setItem(listItem, formValue);
 });
+// MMMM do YYYY, h:mm a
 // declaring day and time for moment
-moment(Date);
-$('#currentDay').text(moment().format('dddd MMMM Do YYYY, h:mm a'));
+moment('#currentDay').format('MMMM Do YYYY, h:mm:ss a');
+// $('#currentDay').text(moment().format('dddd MMMM do'));
 // grabs current time from moment
 var currentTime = moment();
 // converts current time to nearest hour
